@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  font-family: 'Dancing Script', cursive;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  text-align: center;
+  margin-top: 100px;
+  color: #4a2c2a;
+}
+
+.title {
+  font-size: 3rem;
+  color: #b5179e;
+  text-shadow: 2px 2px #fff;
+}
+
+.proposal {
+  font-size: 2rem;
+  margin: 20px;
+  color: #6a0572;
+}
+
+.yes-btn, .no-btn {
+  margin: 15px;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.yes-btn {
+  background-color: #ff006e;
+  color: white;
+}
+
+.yes-btn:hover {
+  transform: scale(1.1);
+  background-color: #fb5607;
+}
+
+.no-btn {
+  background-color: #8338ec;
+  color: white;
+}
+
+.no-btn:hover {
+  transform: scale(1.1);
+  background-color: #3a0ca3;
+}
+
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.app {
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Dancing Script', cursive;
+  position: relative; /* important for button positioning */
+  height: 100vh;
+}
+
+.no-btn {
+  background-color: #8338ec;
+  color: white;
+  position: relative; /* default, overridden when moved */
+}
